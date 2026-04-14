@@ -534,7 +534,7 @@ setInterval(updateTime, 1000);
    ============================================ */
 (function initTabTitle() {
   const originalTitle = document.title;
-  const awayTitle = "⚠️ Ne ratez pas votre croissance...";
+  const awayTitle = "👋 Come back!";
 
   document.addEventListener("visibilitychange", () => {
     document.title = document.hidden ? awayTitle : originalTitle;

@@ -14,9 +14,19 @@ let mouseX = 0, mouseY = 0;
 let cursorX = 0, cursorY = 0;
 let dotX = 0, dotY = 0;
 
+const darkSections = document.querySelectorAll(".problem-section, .framework, .results");
+
 document.addEventListener("mousemove", (e) => {
   mouseX = e.clientX;
   mouseY = e.clientY;
+
+  // Detect if cursor is over a dark section
+  let onDark = false;
+  darkSections.forEach((sec) => {
+    const r = sec.getBoundingClientRect();
+    if (e.clientY >= r.top && e.clientY <= r.bottom) onDark = true;
+  });
+  document.body.classList.toggle("cursor-on-dark", onDark);
 });
 
 function animateCursor() {

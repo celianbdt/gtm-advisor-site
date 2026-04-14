@@ -530,6 +530,18 @@ setInterval(updateTime, 1000);
 
 
 /* ============================================
+   Tab Title — Change when user leaves
+   ============================================ */
+(function initTabTitle() {
+  const originalTitle = document.title;
+  const awayTitle = "⚠️ Ne ratez pas votre croissance...";
+
+  document.addEventListener("visibilitychange", () => {
+    document.title = document.hidden ? awayTitle : originalTitle;
+  });
+})();
+
+/* ============================================
    Smooth Scroll to Anchors (native)
    ============================================ */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

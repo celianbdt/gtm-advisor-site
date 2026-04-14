@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celian Baudet — GTM & Growth Advisor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">CB<span class="dot">.</span></a>
+    <div class="nav-center">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#framework" class="nav-link">Framework</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#results" class="nav-link">Results</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </div>
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta">Book a Call</a>
+      <button class="nav-toggle" id="menuToggle" aria-label="Menu">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-content">
+      <div class="menu-links">
+        <a href="#about" class="menu-link" data-index="01">About</a>
+        <a href="#framework" class="menu-link" data-index="02">Framework</a>
+        <a href="#services" class="menu-link" data-index="03">Services</a>
+        <a href="#results" class="menu-link" data-index="04">Results</a>
+        <a href="#faq" class="menu-link" data-index="05">FAQ</a>
+        <a href="#contact" class="menu-link" data-index="06">Contact</a>
+      </div>
+      <div class="menu-footer">
+        <div class="menu-footer-col">
+          <span class="menu-label">Social</span>
+          <a href="https://www.linkedin.com/in/celianbaudet/" target="_blank">LinkedIn</a>
+          <a href="#">Twitter / X</a>
+        </div>
+        <div class="menu-footer-col">
+          <span class="menu-label">Contact</span>
+          <a href="mailto:celian@celianbaudet.com">celian@celianbaudet.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <!-- Hero Portrait -->
+    <div class="hero-photo-wrap" aria-hidden="true">
+      <img src="img/photo.png" alt="" class="hero-photo">
+    </div>
+    <div class="container">
+      <h1 class="hero-title">
+        <span class="title-line"><span class="title-word">Design, Launch &amp;</span></span>
+        <span class="title-line"><span class="title-word">Scale Your</span> <span class="title-word"><span class="shimmer-title">Go-To-Market</span></span></span>
+      </h1>
+      <p class="hero-sub">I help B2B companies build <span class="shimmer-text">predictable revenue engines</span> — from ICP definition to pipeline generation, through ABX strategies and growth systems that compound.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary magnetic-btn">
+          <span class="btn-text">Request a Strategy Call</span>
+          <span class="btn-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          <span class="btn-shine"></span>
+        </a>
+        <a href="#framework" class="btn-ghost">See My Framework</a>
+      </div>
+      <div class="hero-logos-bar">
+        <div class="logos-track">
+          <div class="logos-slide">
+            <div class="logo-item"><img src="img/logos/logo-1.png" alt="Logo 1"></div>
+            <div class="logo-item"><img src="img/logos/logo-2.png" alt="Logo 2"></div>
+            <div class="logo-item"><img src="img/logos/logo-3.png" alt="Logo 3"></div>
+            <div class="logo-item"><img src="img/logos/logo-4.png" alt="Logo 4"></div>
+            <div class="logo-item"><img src="img/logos/logo-5.png" alt="Logo 5"></div>
+            <div class="logo-item"><img src="img/logos/logo-6.png" alt="Logo 6"></div>
+            <div class="logo-item"><img src="img/logos/logo-7.png" alt="Logo 7"></div>
+            <div class="logo-item"><img src="img/logos/logo-8.png" alt="Logo 8"></div>
+            <div class="logo-item"><img src="img/logos/logo-9.png" alt="Logo 9"></div>
+            <!-- Duplicated for seamless loop -->
+            <div class="logo-item"><img src="img/logos/logo-1.png" alt="Logo 1"></div>
+            <div class="logo-item"><img src="img/logos/logo-2.png" alt="Logo 2"></div>
+            <div class="logo-item"><img src="img/logos/logo-3.png" alt="Logo 3"></div>
+            <div class="logo-item"><img src="img/logos/logo-4.png" alt="Logo 4"></div>
+            <div class="logo-item"><img src="img/logos/logo-5.png" alt="Logo 5"></div>
+            <div class="logo-item"><img src="img/logos/logo-6.png" alt="Logo 6"></div>
+            <div class="logo-item"><img src="img/logos/logo-7.png" alt="Logo 7"></div>
+            <div class="logo-item"><img src="img/logos/logo-8.png" alt="Logo 8"></div>
+            <div class="logo-item"><img src="img/logos/logo-9.png" alt="Logo 9"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section (Dark, like Reflow's statement) -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="problem-inner reveal-card">
+        <h2>Work has changed. <span class="accent shimmer-text">GTM hasn't.</span></h2>
+        <p>Most B2B teams still run go-to-market on gut feeling. Without visibility into how pipeline moves, where it slows, and what converts, investments become guesswork and ROI impossible to measure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About</span>
+        <h2 class="section-title">How I operate</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal-card">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/></svg>
+          </div>
+          <h3>Operator, not consultant</h3>
+          <p>I don't deliver slide decks — I build and execute GTM systems inside your team. Head of GTM, growth lead, ABX architect across 5+ B2B companies.</p>
+        </div>
+        <div class="about-card reveal-card">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/></svg>
+          </div>
+          <h3>Multi-mission model</h3>
+          <p>I work on 2-3 missions simultaneously. Fresh perspective from multiple markets, applied to your specific context. No tunnel vision.</p>
+        </div>
+        <div class="about-card reveal-card">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>Systems thinker</h3>
+          <p>I connect ICP, messaging, outbound, CRM, scoring, and analytics into one coherent revenue engine. Not isolated tactics — integrated systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GTM Framework Section (Dark, with Reflow-style data schemas) -->
+  <section class="section framework" id="framework">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Framework</span>
+        <h2 class="section-title">The GTM Engine<br><span class="text-muted shimmer-text">From Signal to Revenue</span></h2>
+        <p class="section-subtitle">A repeatable framework I deploy across every engagement. Each layer builds on the previous — no shortcuts, no vanity metrics.</p>
+      </div>
+
+      <!-- Feature 1: View economy of GTM (like Reflow's "View economy of work") -->
+      <div class="pipeline-feature reveal-card">
+        <div class="pf-text">
+          <h3>View economy of your GTM</h3>
+          <p>Understand where time and cost actually go across accounts, sequences, and channels with clear, actionable insight.</p>
+        </div>
+        <div class="schema-card">
+          <div class="icp-schema">
+            <div class="icp-row">
+              <span class="icp-label">Accounts targeted</span>
+              <span class="icp-metric" data-counter="847">0</span>
+              <span class="icp-change up">+ 312</span>
+            </div>
+            <div class="icp-row">
+              <span class="icp-label">Reply rate</span>
+              <span class="icp-metric" data-counter="38" data-suffix="%">0</span>
+              <span class="icp-change up">+ 12pts</span>
+            </div>
+            <div class="icp-row">
+              <span class="icp-label">Cost per meeting</span>
+              <span class="icp-metric">&euro;42</span>
+              <span class="icp-change down">- &euro;18</span>
+            </div>
+            <div class="icp-row">
+              <span class="icp-label">Pipeline value</span>
+              <span class="icp-metric">&euro;1.2M</span>
+              <span class="icp-change up">+ 127%</span>
+            </div>
+            <div class="icp-insight">
+              <span>Insight</span>
+              <p>Signal-based sequences convert 3.2x better than cold outbound, reducing cost per meeting by 30% while increasing pipeline velocity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2: Real-time workflows (like Reflow's workflow visualization) -->
+      <div class="pipeline-feature reveal-card">
+        <div class="pf-text">
+          <h3>Real-time GTM workflows</h3>
+          <p>See every step in your go-to-market motion: what's executed, what's skipped, where prospects stall, and where the funnel leaks.</p>
+        </div>
+        <div class="schema-card">
+          <div class="workflow-diagram">
+            <div class="wf-step">
+              <div class="wf-dot active"><span class="energy-pulse"></span></div>
+              <div class="wf-info">
+                <h5>Signal Detected</h5>
+                <span>Hiring intent + tech stack match</span>
+              </div>
+            </div>
+            <div class="wf-step">
+              <div class="wf-dot active"><span class="energy-pulse"></span></div>
+              <div class="wf-info">
+                <h5>Account Enriched</h5>
+                <span>Clay + Pharow &mdash; 12 data points</span>
+              </div>
+            </div>
+            <div class="wf-step">
+              <div class="wf-dot active"><span class="energy-pulse"></span></div>
+              <div class="wf-info">
+                <h5>Sequence Triggered</h5>
+                <span>ABX Multi-touch &mdash; LinkedIn + Email</span>
+              </div>
+            </div>
+            <div class="wf-step">
+              <div class="wf-dot deviation"></div>
+              <div class="wf-info">
+                <h5>Email Bounced <span class="wf-deviation-tag">Deviation</span></h5>
+                <span>Invalid email &mdash; fallback to LinkedIn DM</span>
+              </div>
+            </div>
+            <div class="wf-step">
+              <div class="wf-dot active"><span class="energy-pulse"></span></div>
+              <div class="wf-info">
+                <h5>Meeting Booked</h5>
+                <span>Calendly &mdash; 4 days after first touch</span>
+              </div>
+            </div>
+            <div class="wf-step">
+              <div class="wf-dot active"><span class="energy-pulse"></span></div>
+              <div class="wf-info">
+                <h5>Opportunity Created</h5>
+                <span>CRM &mdash; Stage: Discovery &mdash; &euro;45K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: Data-driven prioritization (like Reflow's automation ROI) -->
+      <div class="pipeline-feature reveal-card">
+        <div class="pf-text">
+          <h3>Data-driven automation</h3>
+          <p>Prioritize high-impact GTM workflows. See exactly where automation saves time, reduces cost, and accelerates pipeline.</p>
+        </div>
+        <div class="schema-card">
+          <div class="bubble-chart">
+            <div class="bubble bubble-lg" style="top: 30%; left: 25%;">%38</div>
+            <div class="bubble bubble-md" style="top: 15%; left: 60%;">%12</div>
+            <div class="bubble bubble-md" style="top: 55%; left: 55%;">%22</div>
+            <div class="bubble bubble-sm" style="top: 10%; left: 38%;">%5</div>
+            <div class="bubble bubble-sm" style="top: 60%; left: 20%;">%8</div>
+            <div class="bubble bubble-sm" style="top: 40%; left: 75%;">%3</div>
+          </div>
+          <div class="icp-insight" style="margin-top: 1rem;">
+            <span>Opportunity</span>
+            <p>Lead enrichment captures 38% of manual GTM time. Automating this single workflow saves 22h/week and increases sequence launch speed by 4x.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Automation Priority Table -->
+      <div class="gtm-table reveal-card">
+        <div class="table-header">
+          <h3>Automation Priority Matrix</h3>
+          <span class="table-badge">Live Data</span>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>GTM Workflow</th>
+                <th>Frequency</th>
+                <th>Avg. Time</th>
+                <th>Impact</th>
+                <th>Priority</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-workflow"><span class="workflow-dot high"></span>Lead Enrichment &amp; Scoring</td>
+                <td>320/mo</td>
+                <td>4m 12s</td>
+                <td><span class="impact-bar" style="--w:92%"></span></td>
+                <td><span class="priority-tag critical">Critical</span></td>
+              </tr>
+              <tr>
+                <td class="td-workflow"><span class="workflow-dot high"></span>Outbound Sequence Trigger</td>
+                <td>180/mo</td>
+                <td>6m 30s</td>
+                <td><span class="impact-bar" style="--w:78%"></span></td>
+                <td><span class="priority-tag high">High</span></td>
+              </tr>
+              <tr>
+                <td class="td-workflow"><span class="workflow-dot medium"></span>CRM Stage Progression</td>
+                <td>95/mo</td>
+                <td>2m 45s</td>
+                <td><span class="impact-bar" style="--w:65%"></span></td>
+                <td><span class="priority-tag high">High</span></td>
+              </tr>
+              <tr>
+                <td class="td-workflow"><span class="workflow-dot medium"></span>Meeting Booking Flow</td>
+                <td>72/mo</td>
+                <td>3m 20s</td>
+                <td><span class="impact-bar" style="--w:52%"></span></td>
+                <td><span class="priority-tag medium">Medium</span></td>
+              </tr>
+              <tr>
+                <td class="td-workflow"><span class="workflow-dot low"></span>Reporting &amp; Attribution</td>
+                <td>30/mo</td>
+                <td>12m 00s</td>
+                <td><span class="impact-bar" style="--w:40%"></span></td>
+                <td><span class="priority-tag medium">Medium</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Services</span>
+        <h2 class="section-title">How I Work With You</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/></svg>
+          </div>
+          <h3 class="service-title">Embedded GTM Operator</h3>
+          <p class="service-duration">3-6 months &middot; 2-3 days/week</p>
+          <p class="service-desc">I join your team as fractional Head of Growth. Full GTM strategy, stack setup, sequence launch, and iteration until pipeline is predictable.</p>
+          <ul class="service-list">
+            <li>Full GTM strategy &amp; execution</li>
+            <li>CRM &amp; tooling architecture</li>
+            <li>ABX sequence design &amp; launch</li>
+            <li>Weekly pipeline reviews</li>
+            <li>Team coaching &amp; enablement</li>
+          </ul>
+          <span class="service-badge">Most Popular</span>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/></svg>
+          </div>
+          <h3 class="service-title">GTM Audit &amp; Blueprint</h3>
+          <p class="service-duration">2-4 weeks &middot; One-time</p>
+          <p class="service-desc">Deep-dive into your current GTM motion. Prioritized roadmap with quick wins, structural fixes, and a 90-day execution plan.</p>
+          <ul class="service-list">
+            <li>ICP validation &amp; market sizing</li>
+            <li>Funnel &amp; conversion analysis</li>
+            <li>Messaging &amp; positioning review</li>
+            <li>Stack &amp; workflow assessment</li>
+            <li>90-day action plan</li>
+          </ul>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.58-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+          </div>
+          <h3 class="service-title">Advisory &amp; Coaching</h3>
+          <p class="service-duration">Ongoing &middot; Bi-weekly</p>
+          <p class="service-desc">For founders and GTM leaders who need a strategic sparring partner. I review, challenge, and help you make better GTM decisions.</p>
+          <ul class="service-list">
+            <li>Bi-weekly strategy sessions</li>
+            <li>Async Slack/Notion support</li>
+            <li>Pipeline &amp; metrics review</li>
+            <li>Hiring &amp; vendor guidance</li>
+            <li>Board deck support</li>
+          </ul>
+          <div class="service-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results Section (Dark) -->
+  <section class="section results" id="results">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Results</span>
+        <h2 class="section-title">Impact You Can Measure</h2>
+        <p class="section-subtitle">Real outcomes from real engagements. No vanity metrics — only pipeline, revenue, and efficiency gains.</p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card reveal-card">
+          <div class="metric-top">
+            <span class="metric-label">Pipeline Generated</span>
+            <span class="metric-trend up">+127%</span>
+          </div>
+          <span class="metric-number" data-target="3.2" data-suffix="M&euro;">0</span>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="--w:85%"></div></div>
+        </div>
+        <div class="metric-card reveal-card">
+          <div class="metric-top">
+            <span class="metric-label">Avg. Reply Rate</span>
+            <span class="metric-trend up">+18pts</span>
+          </div>
+          <span class="metric-number" data-target="42" data-suffix="%">0</span>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="--w:42%"></div></div>
+        </div>
+        <div class="metric-card reveal-card">
+          <div class="metric-top">
+            <span class="metric-label">ROI on GTM Spend</span>
+            <span class="metric-trend up">5.2x</span>
+          </div>
+          <span class="metric-number" data-target="5" data-suffix="x">0</span>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="--w:70%"></div></div>
+        </div>
+        <div class="metric-card reveal-card">
+          <div class="metric-top">
+            <span class="metric-label">Sales Cycle Reduction</span>
+            <span class="metric-trend up">-67%</span>
+          </div>
+          <span class="metric-number" data-target="67" data-suffix="%">0</span>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="--w:67%"></div></div>
+        </div>
+      </div>
+
+      <div class="cases-grid">
+        <div class="case-card reveal-card">
+          <div class="case-image" style="background: linear-gradient(135deg, #2c2824 0%, #3a3430 100%);">
+            <div class="case-image-inner">
+              <span class="case-logo">SaaS B2B</span>
+              <span class="case-tag">GTM Strategy + Outbound</span>
+            </div>
+          </div>
+          <div class="case-info">
+            <h3>From 0 to 1.2M&euro; pipeline in 4 months</h3>
+            <p>Built the entire outbound engine from scratch: ICP definition, account lists, 6 ABX sequences, CRM pipeline, and dashboards.</p>
+            <div class="case-metrics">
+              <div class="cm"><span class="cm-val">847</span><span class="cm-label">Accounts</span></div>
+              <div class="cm"><span class="cm-val">38%</span><span class="cm-label">Reply Rate</span></div>
+              <div class="cm"><span class="cm-val">1.2M&euro;</span><span class="cm-label">Pipeline</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="case-card reveal-card">
+          <div class="case-image" style="background: linear-gradient(135deg, #3a3430 0%, #4a4440 100%);">
+            <div class="case-image-inner">
+              <span class="case-logo">Cloud &amp; Cyber</span>
+              <span class="case-tag">ABX Enterprise</span>
+            </div>
+          </div>
+          <div class="case-info">
+            <h3>ABX strategy for 200+ enterprise accounts</h3>
+            <p>Multi-touch ABX campaigns targeting C-level. Integrated intent signals with sales workflow for maximum conversion.</p>
+            <div class="case-metrics">
+              <div class="cm"><span class="cm-val">200+</span><span class="cm-label">Accounts</span></div>
+              <div class="cm"><span class="cm-val">5x</span><span class="cm-label">Meeting Rate</span></div>
+              <div class="cm"><span class="cm-val">2M&euro;</span><span class="cm-label">Influenced</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ready Section -->
+  <section class="section ready-section">
+    <div class="container">
+      <div class="ready-content reveal-card">
+        <div class="ready-grid">
+          <div class="ready-left">
+            <h2>Your GTM engine.<br><span class="text-muted">Operational in weeks, not months.</span></h2>
+          </div>
+          <div class="ready-right">
+            <div class="ready-timeline">
+              <div class="rt-step"><span class="rt-time">Week 1-2</span><span class="rt-label">Audit &amp; Strategy</span></div>
+              <div class="rt-step"><span class="rt-time">Week 3-4</span><span class="rt-label">First Sequences Live</span></div>
+              <div class="rt-step"><span class="rt-time">Week 6-8</span><span class="rt-label">Pipeline Data</span></div>
+              <div class="rt-step active"><span class="rt-time">Month 3-4</span><span class="rt-label">Full GTM Engine</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stack Section -->
+  <section class="section stack-section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Stack</span>
+        <h2 class="section-title">Tools I Work With</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-item reveal-card">HubSpot</div>
+        <div class="stack-item reveal-card">Salesforce</div>
+        <div class="stack-item reveal-card">Clay</div>
+        <div class="stack-item reveal-card">Lemlist</div>
+        <div class="stack-item reveal-card">La Growth Machine</div>
+        <div class="stack-item reveal-card">Pharow</div>
+        <div class="stack-item reveal-card">Apollo</div>
+        <div class="stack-item reveal-card">Make</div>
+        <div class="stack-item reveal-card">Notion</div>
+        <div class="stack-item reveal-card">Slack</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Common Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal-card">
+          <button class="faq-q"><span>How is this different from a growth agency?</span><svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="faq-a"><p>Agencies optimize channels. I build systems. I work inside your team, own strategy and execution, and stay until the engine runs without me.</p></div>
+        </div>
+        <div class="faq-item reveal-card">
+          <button class="faq-q"><span>What stage companies do you work with?</span><svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="faq-a"><p>Primarily Seed to Series B in B2B SaaS, but also established companies launching new products or entering new markets.</p></div>
+        </div>
+        <div class="faq-item reveal-card">
+          <button class="faq-q"><span>How quickly can I expect results?</span><svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="faq-a"><p>First sequences live within 2-3 weeks. Meaningful pipeline data within 6-8 weeks. Full GTM engine within 3-4 months.</p></div>
+        </div>
+        <div class="faq-item reveal-card">
+          <button class="faq-q"><span>Do you replace my sales/marketing team?</span><svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="faq-a"><p>No. I augment your team and build systems they'll operate. My goal is to make myself unnecessary.</p></div>
+        </div>
+        <div class="faq-item reveal-card">
+          <button class="faq-q"><span>What does pricing look like?</span><svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="faq-a"><p>Depends on scope. Embedded engagements: monthly retainer. Audits: fixed-price. Advisory: lighter monthly. Let's discuss on a call.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2 class="contact-title">
+          <span class="title-line"><span class="title-word">See the market.</span></span>
+          <span class="title-line"><span class="title-word">Optimize the</span> <span class="title-word accent">motion.</span></span>
+          <span class="title-line"><span class="title-word">Scale the revenue.</span></span>
+        </h2>
+        <p class="contact-sub">Let's talk about your GTM challenges. 30 minutes, no pitch deck — just a real conversation.</p>
+        <div class="contact-ctas">
+          <a href="mailto:celian@celianbaudet.com" class="cta-button magnetic-btn">
+            <span class="cta-text">Book a Strategy Call</span>
+            <span class="cta-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg></span>
+            <span class="btn-shine"></span>
+            <div class="cta-fill"></div>
+          </a>
+        </div>
+        <div class="contact-features">
+          <span><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7 7L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> 30-min call</span>
+          <span><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7 7L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> No commitment</span>
+          <span><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5l-7 7L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Actionable takeaways</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <span class="footer-logo">CB<span class="dot">.</span></span>
+          <p class="footer-tagline">Building predictable revenue engines for B2B companies.</p>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">Navigation</span>
+          <a href="#about">About</a>
+          <a href="#framework">Framework</a>
+          <a href="#services">Services</a>
+          <a href="#results">Results</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">Resources</span>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">Connect</span>
+          <a href="https://www.linkedin.com/in/celianbaudet/" target="_blank">LinkedIn</a>
+          <a href="#">Twitter / X</a>
+          <a href="mailto:celian@celianbaudet.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Celian Baudet. All rights reserved.</span>
+        <span class="footer-time" id="footerTime"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Transition -->
+  <div class="page-transition" id="pageTransition">
+    <div class="transition-panel panel-1"></div>
+    <div class="transition-panel panel-2"></div>
+  </div>
+
+  <!-- Scripts — NO Lenis for normal scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
